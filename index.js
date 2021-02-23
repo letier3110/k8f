@@ -22,11 +22,10 @@ urls.map(({ url, method, output, input }) => {
     })
     if (isFullInput)
       output.map(({ craftTime = 100, count = 'undefined' }) => {
-        for (var i = 0; i < count; i++)
-          setTimeout(() => {
-            res.status(200)
-            res.end()
-          }, craftTime)
+        setTimeout(() => {
+          res.status(200)
+          res.end()
+        }, craftTime)
       })
   })
 })
