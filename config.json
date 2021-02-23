@@ -1,0 +1,23 @@
+{
+  "hostname": "localhost",
+  "port": "3000",
+  "urls": [
+    {
+      "method": "GET",
+      "url": "/ironPlate",
+      "input": [
+        {
+          "name": "ironOre",
+          "count": 10
+        }
+      ],
+      "output": [
+        {
+          "name": "ironPlate",
+          "count": 5,
+          "craftTime": 10
+        }
+      ]
+    }
+  ]
+}
